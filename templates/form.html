@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+  FORM
+{% endblock %}
+
+ 
+{% block body %}
+           <marquee> <p>THANK YOU FOR SIGNING IN</p></marquee>
+ <form action="{{ url_for('post') }}" method="post">
+ 	Enter your name:<input name="name" required type="name" placeholder="user-name" >
+ 	<br>
+ 	Enter the password:<input name="password" required type="password" placeholder="password">
+ 	<br>
+   Enter your last-name:<input name="lastname" type="name" placeholder="lastname" >
+   <br>
+   Enter your pen-name:<input name="pname" type="name" placeholder="pen-name" >
+   <br>
+   Enter your Age:<input name="age" type="numeric" placeholder="age" >
+   <br>
+    <button>Submit</button>
+    </form>
+  
+    <a href="{{ url_for('index') }}">Go back</a>
+{% endblock %}

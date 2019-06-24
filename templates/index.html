@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    
+    WELCOME TO blogGRAM 
+{% endblock %}
+
+{% block body %}
+<div class =container>
+	<div class=row>
+	   <div class=col-9>
+          <p> 
+              <b id=bold >
+                         Welcomed to BlogGRAM,BlogGRAM provides you an opputunity to publish blog for you and to help to make them available to you and other members 
+              </b> <br>
+                         If Intrested please join for start bloging and to read and criticise/comment on others blog  
+          </p>   
+                         <a href="{{ url_for('form') }}"><h1>Sign in here</h1></a>   
+       </div>   
+       <div class =col-3>
+    	    <p> 
+               <b id=bold >
+                 <h2>Already a user</h2> 
+                 </b> <br>
+                 <a href="{{url_for('blog')}}">click here</a>
+           </p> 
+      </div>      
+   </div>
+</div>
+   
+
+
+{% endblock %}

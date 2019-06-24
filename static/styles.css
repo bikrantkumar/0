@@ -1,0 +1,33 @@
+body {
+  padding: 2px;
+  margin: 5px; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: red;
+  background-color: black; }
+
+#bold {
+  color: blue; }
+
+h1 {
+  font-size: 100px; }
+
+.eror {
+  text-allign: center; }
+
+table th {
+  border: 5px solid green; }
+table td {
+  border: 10px solid green; }
+
+th {
+  padding: 5px;
+  color: grey; }
+
+td {
+  padding: 5px;
+  color: grey;
+  background-color: spring green; }
+
+/*# sourceMappingURL=styles.css.map */

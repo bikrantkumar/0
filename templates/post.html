@@ -1,0 +1,36 @@
+
+{%extends "layout.html"%}
+{% block heading %}
+CONGRATULATIONS
+{% endblock %}
+{% block body %}
+
+Please confirm your personel information
+<table>
+	<tr> 
+		<th>NAME</th>
+		<th>{{name}}</th>
+	 </tr>
+	 <tr> 
+		<th>LAST NAME</th>
+		<th>{{lastname}}</th>
+	 </tr>
+	 <tr> 
+		<th>PEN-NAME</th>
+		<th>{{pname}}</th>
+	 </tr>
+	 <tr> 
+		<th>AGE</th>
+		<th>{{age}}</th>
+	 </tr>
+	
+</table>  
+         <p>
+             IN CASE OF WRONG INFORMATION RESUBMIT 
+        </p>
+             <a href ={{url_for('form')}} >click here</a>
+         <p>
+            now it is time to start a new blog
+        </p>
+             <a href ={{url_for('blog')}} >click here</a>
+{% endblock %}

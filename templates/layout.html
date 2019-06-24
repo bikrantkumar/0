@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  >
+    <head>
+        <title > blogGRAM
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (min-width: 500px) {
+                body {
+                    text-shadow: initial;
+                    text-rendering: all;
+
+                }
+            }
+
+            @media (max-width: 499px) {
+                body {
+                    text-shadow: transparent;
+                    text-decoration: all;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type= text/css href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body id =body class=eror>
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

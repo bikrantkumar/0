@@ -1,0 +1,42 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: red;
+%style{
+	padding :2px;
+	margin :5px;
+}
+body {
+  @extend %style;
+  font: 100% $font-stack;
+
+  color: $primary-color;
+  background-color: black;
+}
+
+#bold{
+	color :blue;
+}
+h1{
+	font-size:100px;
+}
+.eror{
+     
+	text-allign:center;
+}
+table{
+    th{
+	border: 5px solid green;
+	}
+	td{
+	border: 10px solid green;
+	}
+}
+th{
+	padding : 5px;
+	color : grey; 
+}
+td{
+   padding : 5px;
+	color : grey; 
+   background-color:spring green; 
+}
+
